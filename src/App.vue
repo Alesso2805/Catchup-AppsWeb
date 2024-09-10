@@ -80,7 +80,7 @@ export default {
   </div>
   <div>
     <article-list v-if="errors" :articles="articles"></article-list>
-    <unavailable-content v-else :errors="errors"></unavailable-content>
+    <unavailable-content v-else:errors="errors"></unavailable-content>
   </div>
   <footer-content></footer-content>
 </template>
