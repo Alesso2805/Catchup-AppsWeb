@@ -1,5 +1,5 @@
 import axios from "axios";
-import {LogoApiService} from "../../shared/services/logo-api.service.js";
+import {LogoApiService} from "@/shared/services/logo-api.service.js";
 /**
  * Axios instance
  * @type {AxiosInstance}
