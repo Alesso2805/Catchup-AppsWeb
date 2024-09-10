@@ -3,7 +3,8 @@ import {LogoApiService} from "@/shared/services/logo-api.service.js";
 const http = axios.create({
     baseURL: 'https://newsapi.org/v2',
 });
-const NEWS_API_KEY = 'd081379599d14dd69ef71aa198f9f6d1';
+const NEWS_API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+
 export class NewsApiService {
     apiKey = NEWS_API_KEY;
     logoApi = new LogoApiService();

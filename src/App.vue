@@ -5,9 +5,10 @@ import UnavailableContent from "./news/components/unavailable-content.component.
 import FooterContent from "./public/components/footer-content.component.vue";
 import {NewsApiService} from "./news/services/news-api.service.js";
 import {Article} from "./news/model/article.entity.js";
+import LanguageSwitcher from "@/public/components/language-switcher.component.vue";
 export default {
   name: 'App',
-  components: {FooterContent, UnavailableContent, ArticleList, SourceList},
+  components: {LanguageSwitcher, FooterContent, UnavailableContent, ArticleList, SourceList},
   data() {
     return {
       drawerVisible: false,
@@ -74,6 +75,7 @@ export default {
                        v-on:source-selected="setSource"/>
         </template>
         <template #end>
+          <language-switcher></language-switcher>
         </template>
       </pv-menubar>
     </div>
